@@ -13,33 +13,49 @@
         <form action="">
             <fieldset>
                 <legend>Informações Pessoais</legend>
-            <label for="Nome Completo">Nome completo:</label>
-            <input type="text" id="Nome Completo" placeholder="Digite seu nome completo" required>
-            <br>
-            <label for="Email">Digite seu Email:</label>
-            <input type="email" id="Email" placeholder="Digite seu Email aqui" required>
-            <br>
-            <label for="Telefone">Telefone:</label>             
-            <input type="tel" id="telefone" placeholder="Digite seu telefone celular"  required>
-            <br>
-            <label for="Idade">informe sua idade</label>
-            <input type="">
-            <br>
-            <label for="Data">Data da consulta:</label>
-            <input type="date" id="Data" required>
-            <br>
-            <label for="Horario">Horario da Consulta:</label>
-            <input type="time" id="Horario" required>
-            <br>
-            <label for="observacao">Observações:</label>
-            <br>
-            <textarea name="observacao" id="observacao" cols="30" rows="10"
-                placeholder="Digite aqui suas observações"></textarea>
-            <br>
-            <label for=""></label>
-            <input type="text">
-            <br>
+                <label for="Nome Completo">Nome completo:</label>
+                <input type="text" id="Nome Completo" placeholder="Digite seu nome completo" required>
+                <br>
+                <label for="Email">Digite seu Email:</label>
+                <input type="email" id="Email" placeholder="Digite seu Email aqui" required>
+                <br>
+                <label for="Telefone">Telefone:</label>             
+                <input type="text" id="telefone" placeholder="Digite seu telefone celular"  required>
+                <br>
+                <label for="Idade">Idade:</label>
+                <input type="text" id="Idade" maxlength="2" size="2" required>
+                <br>
+                <label for="Especialidade Medica">Especialidade Médica:</label>
+                <select name="Especialidade Medica" id="Especialidade Medica" required>
+                    <option value="">Selecione uma Especialidade</option>
+                    <option value="Cardiologia">Cardiologia</option>
+                    <option value="Ortopedia">Ortopedia</option>
+                    <option value="Ginecologia">Ginecologia</option>
+                    <option value="Dermatologia">Dermatologia</option>
+                    <option value="Pediatria">Pediatria</option>
+                    <option value="Neurologia">Neurologia</option>
+                    <option value="Oncologia">Oncologia</option>
+                    <option value="Oftalmologia">Oftalmologia</option>
+                    <option value="Urologia">Urologia</option>
+                    <option value="Endocrinologia">Endocrinologia</option>
+                </select>
+            </fieldset> 
+            <fieldset>  
+                <legend>Preferências de Horário</legend>          
+                <label for="Data">Data da consulta:</label>
+                <input type="date" id="Data" required>
+                <br>
+                <label for="Horario">Horario da Consulta:</label>
+                <input type="time" id="Horario" required>
+            
             </fieldset>
+            <fieldset>  
+                <legend>Observações Adicionais</legend>             
+                <textarea name="observacao" id="observacao" cols="20" rows="2"
+                placeholder="Digite aqui suas observações" required></textarea>
+            
+            </fieldset>
+        <button type="submit">Agendar Consulta</button>
         </form>
     
     
